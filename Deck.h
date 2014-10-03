@@ -21,6 +21,7 @@ public:
 	void first();
 	int size() const;
 	int sizeInGame() const;
+	const string getName() const;
 
 
 private:

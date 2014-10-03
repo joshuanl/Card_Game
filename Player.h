@@ -18,7 +18,7 @@ public:
 	const string getAnswer() const;
 	vector<Deck> getDecklist() const;
 	stack<Record> getRecord() const;
-	void fixDeckMaxSize(const int newSize);
+	void changeDeckListSize(const int newSize);
 	int currentDecklistSize();
 	void removeDeck(int pos);
 	void addDeck(Deck deck);

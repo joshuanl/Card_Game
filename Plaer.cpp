@@ -35,12 +35,66 @@ void Player::createProfile(){
 	cin >> secret_question_answer;
 	cout << endl << "Finished creating your profile!" << endl << endl;
 }//end of creating profile
-void Player::changeQuestion();
-const string Player::getQuestion() const;
-const string Player::getAnswer() const;
-vector<Deck> Player::getDecklist() const;
-stack<Record> Player::getRecord() const;
-void Player::fixDeckMaxSize(const int newSize);
-int Player::currentDecklistSize();
-void Player::removeDeck(int pos);
-void Player::addDeck(Deck deck);
+void Player::changeQuestion(){
+	string input, input2, input3;
+	bool accept = false;
+	cout << "  >> Changing Security Question <<" << endl;
+	cout << "Please answer your original question first" << endl;
+	cout << getQuestion() << endl:
+	cout << ">> ";
+	cin >> input;
+	if (input != answer){
+		cout << " >> Your answer was incorrect! <<" << endl;
+	}
+	else{
+		while(!accept){
+			cout << "Enter your new security question: ";
+			cin >> input;
+			cout << "Enter the new answer: ";
+			cin >> input2;
+			cout << "Reenter the password to verify: ";
+			cin >> input3;
+			if (input2 != input3){
+				cout << " >> Passwords do not match! << " << endl;
+			}
+			else if (input2 == input3){
+				secret_question = input;
+				secret_question_answer = input2;
+				accept = true;
+			}
+		}//end of while	
+	}//end of else
+}//end of change question
+
+const string Player::getQuestion() const{
+	return secret_question;
+}// end of get question
+
+const string Player::getAnswer() const{
+	return secret_question_answer;
+}//end of get answer
+
+vector<Deck> Player::getDecklist() const{
+	return decklist;
+}//end of returning decklist
+
+stack<Record> Player::getRecord() const{
+	return record;
+}//end of returning the record
+
+void Player::changeDeckListSize(const int newSize){
+	decklist_max_size = newSize;
+}//end of changing max 
+
+int Player::currentDecklistSize(){
+	return decklist_current_size;
+}//end of current deck list size
+
+void Player::removeDeck(int pos){
+	cout << " >> Deleted deck \"" + decklist[pos].getName() + "\"! << " << endl;
+	decklist.erase(decklist.begin(), decklist.begin()+pos);
+}//end of remove deck
+
+void Player::addDeck(Deck deck){
+	decklist.push_back(deck);
+}//end of add deck

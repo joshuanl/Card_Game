@@ -53,3 +53,7 @@ int Deck::size() const{
 int Deck::sizeInGame() const{
 	return sizeInGame;
 }//end of size of deck in game
+
+const string Deck::getName() const{
+	return deck_name;
+}//end of get name
