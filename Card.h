@@ -9,6 +9,7 @@ class Card
 {
 public:
 	Card(int id, string name);
+	Card(const Card &other);
 	~Card();
 
 	string getName() const;

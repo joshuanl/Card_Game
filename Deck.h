@@ -15,6 +15,8 @@ public:
 
 	void shuffle();
 	Card draw() const;
+	void addCard(Card card);
+	void removeCard();
 	void next();
 	void first();
 	int size() const;
@@ -31,4 +33,4 @@ private:
 
 
 };
-#endif
+#endif		

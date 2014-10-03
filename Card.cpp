@@ -8,6 +8,10 @@ Card::Card(int id, string name){
 	card_name = name;
 }//end of constructor
 
+Card::Card(const Card &other) card_ID(other.card_ID), card_name(other.card_name){
+
+}//end of deep constructor
+
 Card::~Card(){
 	card_ID = 0;
 	card_name = "";
