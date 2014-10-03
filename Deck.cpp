@@ -1,6 +1,4 @@
-#include <string>
-#include <vector>
-#include "Card.h"
+#include "Deck.h"
 #include <stdlib.h>     
 #include <time.h>       
 
@@ -32,11 +30,11 @@ Card Deck::draw() const;{
 	return deck_of_cards[(index-1)];
 }//end of draw
 
-void Deck::addCard(Card card){
+void Deck::addCard(const Card card){
 	deck_of_cards.push_back(card);
 }//end of add a card
 
-void Deck::removeCard(int pos){
+void Deck::removeCard(const int pos){
 	deck_of_cards.erase(deck_of_cards.begin(), deck_of_cards.begin()+(pos-1));
 }//end of removing card
 

@@ -10,13 +10,13 @@ using namespace std;
 class Deck
 {
 public:
-	Deck();
+	Deck(string name);
 	~Deck();
 
 	void shuffle();
 	Card draw() const;
-	void addCard(Card card);
-	void removeCard();
+	void addCard(const Card card);
+	void removeCard(const int pos);
 	void next();
 	void first();
 	int size() const;
