@@ -48,7 +48,7 @@ void Deck::first(){
 	sizeInGame = size;
 }//end of first
 
-int Deck::size() const{
+int Deck::getSize() const{
 	return size;
 }//end of returning size of deck
 

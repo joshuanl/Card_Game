@@ -9,20 +9,20 @@ int main(int argc, char const *argv[]){
 	bool accept = false;
 
 
-	cout << "Game start" << end;
+	cout << "Game start" << endl;
 	cout << "making new deck..." << endl;
 	cout << "deckname: ";
 	cin >> user_input;
 	Deck deck1(user_input);
 	Card temp_card(101, "attack");
 	deck1.addCard(temp_card);
-	cout << "deck1 size: " << deck1.size();
-	Card temp_card(211, "attack, attack");
+	cout << "deck1 size: " << deck1.getSize();
+	temp_card(211, "attack, attack");
 	deck1.addCard(temp_card);
-	cout << "deck1 size: " << deck1.size();
-	Card temp_card(231, "heal, attack");
+	cout << "deck1 size: " << deck1.getSize();
+	temp_card(231, "heal, attack");
 	deck1.addCard(temp_card);
-	cout << "deck1 size: " << deck1.size();
+	cout << "deck1 size: " << deck1.getSize();
 	cout << "deckame: " << deck1.getName() << endl << endl;
 
 	temp_card(deck1.draw());

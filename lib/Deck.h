@@ -19,7 +19,7 @@ public:
 	void removeCard(const int pos);
 	void next();
 	void first();
-	int size() const;
+	int getSize() const;
 	int sizeInGame() const;
 	const string getName() const;
 

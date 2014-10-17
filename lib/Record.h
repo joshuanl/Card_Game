@@ -2,7 +2,7 @@
 #define RECORD_H 
 
 #include <string>
-#include <unordered_map>
+#include <map>
 
 using namespace std;
 
@@ -30,7 +30,7 @@ private:
 	string deckName;
 	int overallWins;
 	int overallLoss;
-	unordered_map<string, MatchRecord> history_map;
+	map<string, MatchRecord> history_map;
 	
 };
 #endif

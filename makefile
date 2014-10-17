@@ -19,11 +19,11 @@ $(BIN)/Record.o: $(SRC)/Record.cpp $(LIB)/Record.h
 $(BIN)/Player.o: $(SRC)/Player.cpp $(LIB)/Deck.h $(LIB)/Record.h 	
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-$(BIN)/main.o: $(SRC)/main.cpp $(BIN)/Deck.o $(BIN)/Card.o $(BIN)/Player.o
+$(BIN)/main.o: main.cpp $(BIN)/Deck.o $(BIN)/Card.o $(BIN)/Player.o
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-$(BIN)/main: $(BIN)/main.o $(BIN)/Deck.o $(BIN)/Card.o $(BIN)/Player.o 
-	$(CC) -o $@ main.cpp main.o Deck.o Card.o $(CFLAGS)
+$(BIN)/main: $(BIN)/main.o $(BIN)/Deck.o $(BIN)/Card.o $(BIN)/Player.o $(BIN)/Record.o 
+	$(CC) -g -o $@ main.cpp main.o Deck.o Card.o $(CFLAGS) -std=c++11
 
 .PHONY: clean
 

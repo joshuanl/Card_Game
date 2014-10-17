@@ -34,7 +34,7 @@ private:
 	string name;
 	string email;
 	vector<Deck> decklist;
-	stack<Record> Record;
+	stack<Record> record;
 	int decklist_max_size;
 	int decklist_current_size;
 };
