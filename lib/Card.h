@@ -14,6 +14,7 @@ public:
 
 	string getName() const;
 	int getID() const;
+	void printCard() const;
 
 private:
 	string card_name;

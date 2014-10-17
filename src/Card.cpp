@@ -16,10 +16,14 @@ Card::~Card(){
 	card_name = "";
 }//end of destructor
 
-string getName() const{
+string Card::getName() const{
 	return card_name;
 }//end of getname
 
-int getID() const{
+int Card::getID() const{
 	return card_ID;
 }//end of getID
+
+void Card::printCard() const{
+	cout << card_name << "  --  " << card_ID << endl;
+}//end of printing 

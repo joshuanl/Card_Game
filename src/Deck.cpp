@@ -44,7 +44,8 @@ void Deck::next(int amt){
 }//end of next
 
 void Deck::first(){
-	index = 0;
+	index = size;
+	sizeInGame = size;
 }//end of first
 
 int Deck::size() const{
