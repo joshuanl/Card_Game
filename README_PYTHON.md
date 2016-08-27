@@ -3,7 +3,7 @@
 ----------------------------
 ###Crash Course of the Card Game (currently does not have title)
 ##There are three types of cards
-	```Core```, ```Basic```, and ```Special```
+	```Core, Basic, and Special```
 
 Core and Basic cards have ```One Action``` where Special cards may have ```Two Actions```
 There are three types of actions, ```Attack```, ```Block```, and ```Heal```.  An attack can only be stopped by a Block card.  Meaning, if an Attack card is played against another Attack card, both players take damage.  If two Block cards are played, nothing will happen.  Heal cards will restore 1 life but is only effective if it's not against an Attack Card.  Thus, if two Heal cards are played, both players will recover 1 life.
