@@ -16,9 +16,12 @@ When a Special card is played, it may have two actions.  For the first action, f
 
 Note that some cards in this Python project do not exist in the physical version (```Overkill``` is unbalanced).
 
-Copyright © 2016 Joshua Lum 
+Copyright © 2016 Joshua Lum
+
 Downloading and playing the game is allowed but the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software/Card Game Concept, and to permit persons to whom the Software/Card Game Concept is furnished to do so, must notify and receive consent from myself and Sidney Chan.  
 
 You may contact us at:
+
 Joshua Lum: jnlcross@gmail.com
+
 Sidney Chan: sidneychan23@yahoo.com
