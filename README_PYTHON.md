@@ -1,4 +1,13 @@
-#Card game used to teach Sidney Chan basics of Python and PyGames
+#Card game project used to teach basics of Python and PyGames
+Project coded by Sidney Chan under Joshua Lum
+
+#To Run
+There is a textbased version and a GUI version using PyGames  
+main.py will run the text based version which only requires you to have Python installed  
+https://www.python.org/downloads/  
+
+visual.py will run the GUI version, but you will need to have PyGames installed.  
+http://www.pygame.org/download.shtml  
 
 ----------------------------
 ###Crash Course of the Card Game (currently does not have title)
@@ -20,8 +29,6 @@ Copyright © 2016 Joshua Lum
 
 Downloading and playing the game is allowed but the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software/Card Game Concept, and to permit persons to whom the Software/Card Game Concept is furnished to do so, must notify and receive consent from myself and Sidney Chan.  
 
-You may contact us at:
-
-Joshua Lum: jnlcross@gmail.com
-
-Sidney Chan: sidneychan23@yahoo.com
+You may contact us at:  
+Joshua Lum: jnlcross@gmail.com  
+Sidney Chan: sidneychan23@yahoo.com  
